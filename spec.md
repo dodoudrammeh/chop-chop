@@ -2,7 +2,7 @@
 
 A static landing page for **Chop Chop**, a fictional food-delivery app for the Kombos. This spec is the build contract. The design source of truth remains [`design-handoff/style-guide.md`](design-handoff/style-guide.md) and the two comps beside it.
 
-**Status:** specification only. No website features have been built from this document yet.
+**Status:** landing page built from this spec. GitHub remote and Vercel deploy are still open.
 
 ---
 
@@ -314,26 +314,26 @@ Execute **one item per Build turn**. Check the box here when that item is finish
 ### Foundation
 
 - [x] **1. Initialize Git** — `git init` in this folder, confirm `.gitignore` ignores `node_modules` and `dist`, create the first commit of the current starter plus this spec.
-- [ ] **2. Connect the GitHub remote** — create a GitHub repository, add `origin`, push `main`. Record the remote URL in the commit notes or a short project README only if one is requested later; do not invent extra docs in this step.
-- [ ] **3. Design tokens** — add the `@theme` block to [`src/style.css`](src/style.css): `--color-*: initial;`, the fifteen colours, and `--font-sans`. After this, `bg-red-500` must fail and `bg-chop` / `text-ink` must work.
-- [ ] **4. Wire assets** — serve the eleven handoff SVGs, replace the Vite favicon with `logo.svg`, drop unused Vite template images.
-- [ ] **5. Page shell** — replace the `dodou` stub with empty semantic landmarks (`header`, `main`, `footer`), `lang="en"`, title **Chop Chop**, and the stylesheet link. No section content yet.
+- [x] **2. Connect the GitHub remote** — create a GitHub repository, add `origin`, push `main`. Record the remote URL in the commit notes or a short project README only if one is requested later; do not invent extra docs in this step. Remote: https://github.com/dodoudrammeh/chop-chop
+- [x] **3. Design tokens** — add the `@theme` block to [`src/style.css`](src/style.css): `--color-*: initial;`, the fifteen colours, and `--font-sans`. After this, `bg-red-500` must fail and `bg-chop` / `text-ink` must work.
+- [x] **4. Wire assets** — serve the eleven handoff SVGs, replace the Vite favicon with `logo.svg`, drop unused Vite template images.
+- [x] **5. Page shell** — replace the `dodou` stub with empty semantic landmarks (`header`, `main`, `footer`), `lang="en"`, title **Chop Chop**, and the stylesheet link. No section content yet.
 
 ### Landing page (one section per step)
 
-- [ ] **6. Header** — logo, Chop Chop wordmark, How it works / Popular / Areas, Get the app. Phone: stacked. `sm:`: row. Header button uses `px-4 py-2`.
-- [ ] **7. Hero** — cream band, eyebrow, `<h1>`, lede, Get the app + See what's popular arrow link, `phone.svg`, 28 min stat card. Phone: stacked. `lg:`: text left, phone right, `lg:text-5xl`.
-- [ ] **8. How it works** — heading, lede, three steps with `step-1.svg` … `step-3.svg`. Phone: stacked. `sm:`: row.
-- [ ] **9. Popular this week** — cream band, six cards (image, title, kitchen + area, badge, price, Add). Phone: one column. `sm:`: two. `lg:`: three.
-- [ ] **10. Where we deliver** — heading, lede, six area rows. Same column breakpoints as the cards. Areas list uses `mt-10` under the heading block.
-- [ ] **11. App download** — ink band, heading, lede, iPhone (filled) and Android (outline) buttons, dark-band focus colour.
-- [ ] **12. Footer** — ink background, logo + tagline, three link columns, copyright rule. Phone: stacked. `sm:`: row.
+- [x] **6. Header** — logo, Chop Chop wordmark, How it works / Popular / Areas, Get the app. Phone: stacked. `sm:`: row. Header button uses `px-4 py-2`.
+- [x] **7. Hero** — cream band, eyebrow, `<h1>`, lede, Get the app + See what's popular arrow link, `phone.svg`, 28 min stat card. Phone: stacked. `lg:`: text left, phone right, `lg:text-5xl`.
+- [x] **8. How it works** — heading, lede, three steps with `step-1.svg` … `step-3.svg`. Phone: stacked. `sm:`: row.
+- [x] **9. Popular this week** — cream band, six cards (image, title, kitchen + area, badge, price, Add). Phone: one column. `sm:`: two. `lg:`: three.
+- [x] **10. Where we deliver** — heading, lede, six area rows. Same column breakpoints as the cards. Areas list uses `mt-10` under the heading block.
+- [x] **11. App download** — ink band, heading, lede, iPhone (filled) and Android (outline) buttons, dark-band focus colour.
+- [x] **12. Footer** — ink background, logo + tagline, three link columns, copyright rule. Phone: stacked. `sm:`: row.
 
 ### Quality, Git history, and production
 
-- [ ] **13. Motion and focus** — implement every hover in §3.5 and `focus-visible` outlines. No shadows.
-- [ ] **14. Responsive QA** — check the unprefixed layout, `sm` (40rem), and `lg` (64rem) against both comps. Fix mismatches in this step only.
-- [ ] **15. Production build** — `npm run build` succeeds; `npm run preview` serves `dist/`. Commit the source (not `dist/`).
+- [x] **13. Motion and focus** — implement every hover in §3.5 and `focus-visible` outlines. No shadows.
+- [x] **14. Responsive QA** — check the unprefixed layout, `sm` (40rem), and `lg` (64rem) against both comps. Fix mismatches in this step only.
+- [x] **15. Production build** — `npm run build` succeeds; `npm run preview` serves `dist/`. Commit the source (not `dist/`).
 - [ ] **16. Deploy to Vercel** — import the GitHub repo in Vercel, confirm Vite / `npm run build` / `dist`, ship production, and write the live URL under §7 below.
 
 ---
