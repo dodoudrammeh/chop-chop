@@ -334,7 +334,7 @@ Execute **one item per Build turn**. Check the box here when that item is finish
 - [x] **13. Motion and focus** — implement every hover in §3.5 and `focus-visible` outlines. No shadows.
 - [x] **14. Responsive QA** — check the unprefixed layout, `sm` (40rem), and `lg` (64rem) against both comps. Fix mismatches in this step only.
 - [x] **15. Production build** — `npm run build` succeeds; `npm run preview` serves `dist/`. Commit the source (not `dist/`).
-- [ ] **16. Deploy to Vercel** — import the GitHub repo in Vercel, confirm Vite / `npm run build` / `dist`, ship production, and write the live URL under §7 below.
+- [x] **16. Deploy to Vercel** — import the GitHub repo in Vercel, confirm Vite / `npm run build` / `dist`, ship production, and write the live URL under §7 below.
 
 ---
 
@@ -342,14 +342,14 @@ Execute **one item per Build turn**. Check the box here when that item is finish
 
 The project is done when all of the following are true:
 
-- [ ] Every checklist item above is checked.
+- [x] Every checklist item above is checked.
 - [ ] The live page matches the comps at phone, `sm`, and `lg`.
-- [ ] HTML uses token classes only; no raw hex; no `font-bold`; no box shadows.
-- [ ] Copy matches the desktop comp, including the CS250 footer line.
-- [ ] The GitHub remote is connected and `main` is pushed.
-- [ ] Vercel is serving the production build.
+- [x] HTML uses token classes only; no raw hex; no `font-bold`; no box shadows.
+- [x] Copy matches the desktop comp, including the CS250 footer line.
+- [x] The GitHub remote is connected and `main` is pushed.
+- [x] Vercel is serving the production build.
 
-**Live URL:** _to be filled in at step 16_
+**Live URL:** https://chop-chop-ten.vercel.app
 
 ---
 
